@@ -1,0 +1,88 @@
+*{margin: 0 auto;
+padding: 0;
+
+}
+body{
+    background-image: url(teglafal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: "h h h"
+    "n n n"
+    "as ar ar"
+    "f  f f";
+
+}
+header{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0 auto;
+grid-area: h;
+}
+nav{
+grid-area: n;
+}
+article{
+    color: chartreuse;
+    padding-top: 50px;
+grid-area: ar;
+}
+aside{
+    padding-top: 50px;
+    grid-area: as;
+}
+footer{
+    color: aqua;
+    padding-top: 100px;
+grid-area: f;
+}
+header h1{
+
+text-align: center;
+color: whitesmoke;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+text-decoration: none;
+
+}
+.aktiv{
+    background-color: whitesmoke;
+}
+nav a{
+    color: red;
+font-size: 25px;
+
+padding: 15px;
+}
+article h1{
+    padding: 20px;
+}
+aside img{
+    max-width: 400px;
+}
+article ol,li, a{
+    text-decoration: none;
+    color: orangered;
+    padding-bottom: 20px;
+    font-size: large;
+}
+article p {
+    padding-bottom: 30px;
+}
+@media only screen and (max-width: 600px){
+    main{
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-areas: "h"
+        "n"
+        "as"
+        "ar"
+        "f";
+}
+}
